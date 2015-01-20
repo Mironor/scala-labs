@@ -37,6 +37,7 @@ object ListManipulationExercise02 {
    * The idea is to re-write the method into more functional style. In the end, you
    * may be able to achieve the same functionality as implemented below
    * in a one-liner.
+   * Use partition() collection method
    */
   def separateTheMenFromTheBoys(persons: List[Person]): List[List[String]] = {
     var boys: ListBuffer[Person] = new ListBuffer[Person]()

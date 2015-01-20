@@ -1,6 +1,7 @@
 package org.scalalabs.basic.lab01
 
-import java.lang.{ IllegalArgumentException => IAE }
+import java.lang.{IllegalArgumentException => IAE}
+
 import org.junit.runner.RunWith
 import org.specs2.mutable.Specification
 import org.specs2.runner.JUnitRunner
@@ -68,34 +69,6 @@ class OOExerciseTest extends Specification {
       //      e3 > e1 must beTrue
       //      val list = List(e2, e1, e3)
       //      list.sorted ==== List(e1, e2, e3)
-    }
-  }
-  
-   "Exercise 4: Implicit class" should {
-    //implicit val defaultConverter = DefaultCurrencyConverter
-     "add *(euro:Euro) (multiply) method to Int" in {
-      skipped("Uncomment and fix me")
-//      import Euro._
-//      val res = 3 * new Euro(2, 50)
-//      res.euro ==== 7
-//      res.cents ==== 50
-    }
-    "implicitly convert from euro to dollar" in {
-      skipped("Uncomment and fix me")
-//      val e: Euro = new Dollar(1, 5)
-//      e.euro ==== 1
-//      e.cents ==== 42
-    }
-  }
-  "Exercise 5: Implicit parameter" should {
-    "make currency converter plugable" in {
-       skipped("Uncomment and fix me")
-//      implicit object anotherConverter extends DefaultCurrencyConverter {
-//        override val conversionRate = 1.2
-//      }
-//      val e: Euro = new Dollar(1, 5)
-//      e.euro ==== 1
-//      e.cents ==== 26
     }
   }
 }

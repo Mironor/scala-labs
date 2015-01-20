@@ -1,12 +1,11 @@
 package org.scalalabs.basic.lab02
 
-import org.scalatest.junit.JUnitSuite
-import org.junit.Test
-import java.lang.{ IllegalArgumentException => IAE }
+import java.lang.{IllegalArgumentException => IAE}
+
 import org.junit.runner.RunWith
+import org.scalalabs.basic.lab02.ListManipulationExercise01._
 import org.specs2.mutable.Specification
 import org.specs2.runner.JUnitRunner
-import ListManipulationExercise01._
 /**
  * Lab 02: List operations
  * 
@@ -50,7 +49,7 @@ class ListManipulationExercise01Test extends Specification {
     }
 
     "concat two lists" in {
-      List("One", "Two", "Three", "Four", "Five") === concatLists(listOfStrings, List("Four", "Five"))
+      concatLists(listOfStrings, List("Four", "Five")) === List("One", "Two", "Three", "Four", "Five")
     }
 
     "contains One Two And Three" in {
@@ -65,11 +64,11 @@ class ListManipulationExercise01Test extends Specification {
     }
 
     "get list contains two odd elements" in {
-      List(1, 3, 5) === oddElements(List(1, 2, 3, 4, 5))
+      oddElements(List(1, 2, 3, 4, 5)) === List(1, 3, 5)
     }
 
     "get tails of list" in {
-      List(List(1, 2, 3, 4, 5), List(2, 3, 4, 5), List(3, 4, 5), List(4, 5), List(5), List()) === tails(List(1, 2, 3, 4, 5))
+      tails(List(1, 2, 3, 4, 5)) === List(List(1, 2, 3, 4, 5), List(2, 3, 4, 5), List(3, 4, 5), List(4, 5), List(5), List())
     }
   }
 
