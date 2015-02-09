@@ -26,33 +26,35 @@ object PatternMatchingExercise {
    * For expected solution see unittest @PatternMatchingExerciseTest
    *************************************************************************/
 
+  // Possible inputs: Smalltalk, Clojure, Java, Haskel, C, Scala, Oz
   def describeLanguage(s: String) = {
+    // Uncomment and replace the "_" to validate tests
+    /*
+    s match {
+      case _ => "OOP"
+      case _ => "Functional"
+      case _ => "Hybrid"
+      case _ => "Procedural"
+      case _ => "Unknown"
+    }
+    */
     error("fix me")
   }
 
   def matchOnInputType(in: Any) = {
+    // Uncomment and replace the "_" to validate tests
+    /*
+    case _ => s"A string with length ${s.length}"
+    case _ => "A positive integer"
+    case _ => s"A person with name: ${p.name}"
+    case _ => "Seq with more than 10 elements"
+    case _ => s"first: $first, second: $second, rest: $tail"
+    case _ => "A Scala Option subtype"
+    case _ => "Some Scala class"
+    case _ => "A null value"
+    case _ => "The default"
+     */
     error("fix me")
-  }
-
-  def older(p: Person): Option[String] = {
-    error("fix me")
-  }
-
-  /*************************************************************************
-   * Pattern matching with partial functions
-   * For expected solution see @PatternMatchingExerciseTest
-   *************************************************************************/
-
-  val pf1: PartialFunction[String, String] = {
-    case _ => error("fix me")
-  }
-
-  val pf2: PartialFunction[String, String] = {
-    case _ => error("fix me")
-  }
-
-  val pf3:PartialFunction[String, String] = {
-    case _ => error("fix me")
   }
 
 }

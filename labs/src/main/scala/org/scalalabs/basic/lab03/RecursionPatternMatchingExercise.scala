@@ -35,6 +35,7 @@ object RecursionPatternMatchingExercise {
   /**
    * Group Consecutive values
    * List(1,1,2,3,1,1) -> List(1,1), List(2), List(3), List(1,1)
+   * you may use List.span() method
    */
   def groupConsecutive[T](in: List[T]): List[List[T]] = {
     error("fix me")
@@ -43,6 +44,7 @@ object RecursionPatternMatchingExercise {
   /**
    * Group Equal values
    * List(1,1,2,3,1,1) -> List(1,1,1,1), List(2), List(3)
+   * you may use List.partition() method
    */
   def groupEquals[T](in: List[T]): List[List[T]] = {
     error("fix me")
@@ -63,6 +65,8 @@ object RecursionPatternMatchingExercise {
   def amountEqualMembers[T](in: List[T]): List[(Int, T)] = {
     error("fix me")
   }
+
+  // Advanced exercises
   
   /**
    * Zip multiple lists

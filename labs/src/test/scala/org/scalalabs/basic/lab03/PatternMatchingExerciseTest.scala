@@ -31,22 +31,5 @@ class PatternMatchingExerciseTest extends Specification {
       "Some Scala class" === matchOnInputType(10l)
       "A null value" === matchOnInputType(null)
     }
-    "check age" in {
-      Some("Jack") === older(new Person("Jack", 31))
-      None === older(new Person("Jack", 30))
-    }
-    "match partial functions" in {
-      //pf1 and pf2 are both partial functions.
-      //These inherit from Scala's Function class, with an extra method: isDefinedAt
-      //  pf3 should be defined in terms of pf1 and pf2
-
-      pf1.isDefinedAt("scala-labs") must beTrue
-      pf1.isDefinedAt("stuff") must beTrue
-      pf1.isDefinedAt("other stuff") must beFalse
-      pf2.isDefinedAt("other stuff") must beTrue
-
-      pf3.isDefinedAt("scala-labs") must beTrue
-      pf3.isDefinedAt("other stuff") must beTrue
-    }
   }
 }
